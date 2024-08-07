@@ -1,0 +1,241 @@
+* {
+  font-family: "Lato", sans-serif;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.about,
+.experience,
+.contact {
+  background: #0a0a0a;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.vertical-separator {
+  height: 300px;
+  width: 1px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.text-lg-start {
+  text-align: left !important;
+}
+
+@media (max-width: 991.98px) {
+  .order-md-1 {
+    order: 1;
+  }
+  .order-md-2 {
+    order: 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .order-md-3 {
+    order: 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+/* ABOUT PAGE */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ABOUT ME CARDS */
+
+.about-card {
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  background-color: rgba(24, 24, 24, 0.25);
+  border: none;
+  border-radius: 0;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 1); */
+}
+
+.about-card .card-header {
+  border-bottom: none;
+}
+
+.about-card .card-title {
+  font-size: 2.5rem;
+  /* margin-bottom: 0; */
+}
+
+.about-card .card-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  /* margin-bottom: 1rem; */
+}
+
+.about-card .card-text.mt-3 {
+  /* margin-top: 1rem; */
+}
+
+/* SKILLS */
+
+.skill-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(24, 24, 24, 0.25); */
+  margin-top: 100px;
+  border: none;
+  border-radius: 0;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 1); */
+}
+
+.skill-header {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  color: white;
+}
+.skill-icon {
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  font-size: 10rem;
+}
+
+.skill-title {
+  color: rgb(255, 255, 255);
+  display: flex;
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+}
+
+/*EXPERIENCE */
+
+.experience-header {
+  margin-top: 200px;
+  font-weight: normal;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+/* SOCIALS */
+
+.socials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.socials-card {
+  padding: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin: 0.5rem;
+}
+
+.socials-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.socials-title {
+  display: flex;
+  font-size: 1.5rem;
+  padding-top: 10px;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.socials-icon {
+  font-size: 8rem;
+}
+
+.socials-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* CONTACT FORM */
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-form {
+  color: white;
+}
+
+.contact-title {
+  color: white;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .hero-left-text .hero-name-text {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .hero-bracket {
+    /* display: none; */
+  }
+
+  .skill-icon {
+    font-size: 6rem;
+  }
+
+  .socials-icon {
+    font-size: 4rem;
+  }
+  .contact-form {
+    max-width: 18rem;
+  }
+}
